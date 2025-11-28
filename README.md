@@ -2,7 +2,7 @@
 
 A Python implementation of the time-series momentum strategy from **"Trend Following: Equity and Bond Crisis Alpha"** by Hamill, Rattray, and Van Hemert (Man AHL, 2016).
 
-This project replicates the **mom(1,4)** strategy—a volatility-scaled momentum signal using the past 4 months of returns—and adapts it for trading equity ETFs.
+This project replicates the **mom(1,4)** strategy, a volatility-scaled momentum signal using the past 4 months of returns—and adapts it for trading equity ETFs.
 
 ---
 
