@@ -64,7 +64,7 @@ The portfolio is scaled to achieve 10% target volatility:
 
 $$gearing = \frac{\sigma_{target}}{\sqrt{w' \Omega w}}$$
 
-Where $\Omega$ is the correlation matrix estimated with 24-month EWM.
+Where $\Omega$ is the correlation matrix estimated with a rolling 24-month window.
 
 ### Signal Capping (Footnote 5)
 
