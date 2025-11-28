@@ -21,15 +21,12 @@ Backtest on S&P 500 sector ETFs (2018-2025):
 
 The strategy achieves a **higher risk-adjusted return** (Sharpe 0.64 vs 0.56) with **significantly lower volatility** (9% vs 15%), demonstrating effective volatility targeting.
 
-<p align="center">
-  <img src="results/equity_curve.png" width="80%">
-</p>
 
 ---
 
 ## Methodology
 
-### Signal Construction (Equation 1)
+### Signal Construction
 
 The momentum signal is calculated as:
 
@@ -41,7 +38,7 @@ Where:
 - $\sigma_t$ = Volatility estimate at time $t$
 - $\sqrt{\sum w_i^2}$ = 0.5 for equal weights
 
-### Volatility Estimation (Footnote 4)
+### Volatility Estimation
 
 Volatility uses exponentially weighted moving standard deviation with a floor:
 
@@ -53,7 +50,7 @@ Where:
 
 The floor prevents over-leveraging during low-volatility regimes.
 
-### Position Sizing (Equation 2)
+### Position Sizing
 
 Positions are scaled by dividing the signal by volatility again:
 
@@ -61,7 +58,7 @@ $$position_t = \frac{mom_t}{\sigma_t}$$
 
 This ensures equal risk contribution across assets regardless of their volatility.
 
-### Portfolio Gearing (Footnote 6)
+### Portfolio Gearing
 
 The portfolio is scaled to achieve 10% target volatility:
 
@@ -83,8 +80,6 @@ Signals are capped at ±2 to prevent extreme positions.
 │   ├── strategy.py         # MomentumStrategy and Backtester classes
 │   ├── data.py             # Data fetching (yfinance, Alpaca)
 │   └── visualization.py    # Performance charts
-├── notebooks/
-│   └── methodology.ipynb   # Step-by-step walkthrough
 ├── results/                # Backtest outputs
 └── requirements.txt
 ```
