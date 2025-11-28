@@ -210,6 +210,5 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Author
 
-**Eduardo Medina (coello)**  
-MSc Quantitative Finance, University of Amsterdam  
-[LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)
+**Eduardo Medina (coello380)**  
+[LinkedIn](https://www.linkedin.com/in/eduardomedinaoliveira/) | [GitHub](https://github.com/coello380)
