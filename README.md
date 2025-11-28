@@ -66,7 +66,7 @@ $$gearing = \frac{\sigma_{target}}{\sqrt{w' \Omega w}}$$
 
 Where $\Omega$ is the correlation matrix estimated with a rolling 24-month window.
 
-### Signal Capping (Footnote 5)
+### Signal Capping
 
 Signals are capped at ±2 to prevent extreme positions.
 
